@@ -27,9 +27,9 @@ class _DashboardState extends State<Dashboard> {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {
-                    setState(() {
-                      //
-                    });
+                    Navigator.pushNamed(context, '/arithmeticRoute');
+
+                    //
                   },
                   child: const Text('Arithmetic'),
                 ),
@@ -39,11 +39,23 @@ class _DashboardState extends State<Dashboard> {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {
-                    setState(() {
-                      //
-                    });
+                    Navigator.pushNamed(context, '/siRoute');
+
+                    //
                   },
                   child: const Text('Simple Interest'),
+                ),
+              ),
+              const SizedBox(height: 8),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/siRoute');
+
+                    //
+                  },
+                  child: const Text('Circle'),
                 ),
               ),
               const SizedBox(height: 8),

@@ -91,14 +91,6 @@ class _ArithmeticViewState extends State<ArithmeticView> {
                 ),
               ),
               const SizedBox(height: 8),
-              Text(
-                'Sum is : $result',
-                style: const TextStyle(
-                  fontSize: 20,
-                  fontStyle: FontStyle.italic,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
             ],
           ),
         ),
