@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:simple_interest/model/areaofcircle.dart';
 import 'package:simple_interest/view/arithmetic.dart';
+import 'package:simple_interest/view/circle.dart';
 import 'package:simple_interest/view/dashboard.dart';
 
 import 'package:simple_interest/view/simple_interest.dart';
@@ -16,7 +18,7 @@ class APP extends StatelessWidget {
         '/': (context) => const Dashboard(),
         '/arithmeticRoute': (context) => const ArithmeticView(),
         '/siRoute': (context) => const SimpleInterest(),
-        '/circleRoute': (context) => const SimpleInterest(),
+        '/circleRoute': (context) => const Circle(),
       },
     );
   }

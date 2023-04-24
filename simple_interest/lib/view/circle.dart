@@ -26,7 +26,7 @@ class _CircleState extends State<Circle> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Arithemtic'),
+        title: const Text('Are of Circle'),
         centerTitle: true,
         elevation: 0,
       ),
@@ -56,7 +56,15 @@ class _CircleState extends State<Circle> {
                       area();
                     });
                   },
-                  child: const Text('circle'),
+                  child: const Text('calculate'),
+                ),
+              ),
+              Text(
+                'Area of given circle is :$result',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontStyle: FontStyle.italic,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
             ],
