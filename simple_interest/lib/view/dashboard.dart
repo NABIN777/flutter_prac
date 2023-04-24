@@ -43,7 +43,7 @@ class _DashboardState extends State<Dashboard> {
                       //
                     });
                   },
-                  child: const Text('SUB'),
+                  child: const Text('Simple Interest'),
                 ),
               ),
               const SizedBox(height: 8),
