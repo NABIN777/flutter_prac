@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:simple_interest/model/areaofcircle.dart';
 import 'package:simple_interest/view/arithmetic.dart';
 import 'package:simple_interest/view/circle.dart';
+import 'package:simple_interest/view/column_view.dart';
 import 'package:simple_interest/view/dashboard.dart';
 import 'package:simple_interest/view/name.dart';
 import 'package:simple_interest/view/rich_text.dart';
-
 import 'package:simple_interest/view/simple_interest.dart';
 
 class APP extends StatelessWidget {
@@ -23,6 +22,7 @@ class APP extends StatelessWidget {
         '/circleRoute': (context) => const Circle(),
         '/nameRoute': (context) => const Name(),
         '/richRoute': (context) => const RichTextView(),
+        'colRoute': (context) => const ColumnView(),
       },
     );
   }

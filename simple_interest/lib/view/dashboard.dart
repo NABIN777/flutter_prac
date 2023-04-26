@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({super.key});
@@ -14,7 +12,7 @@ class _DashboardState extends State<Dashboard> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Dashboard"),
+        title: const Text("Dashboard"),
         centerTitle: true,
         elevation: 0,
       ),
@@ -77,6 +75,16 @@ class _DashboardState extends State<Dashboard> {
                     Navigator.pushNamed(context, '/richRoute');
                   },
                   child: const Text('Rich Text'),
+                ),
+              ),
+              const SizedBox(height: 8),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/colRoute');
+                  },
+                  child: const Text('Colum View'),
                 ),
               ),
               const SizedBox(height: 8),
