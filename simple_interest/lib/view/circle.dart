@@ -12,7 +12,7 @@ class Circle extends StatefulWidget {
 
 class _CircleState extends State<Circle> {
   int radius = 0;
-  int result = 0;
+  double result = 0;
 
   late AreaOfCircle areaOfCircle;
   void area() {

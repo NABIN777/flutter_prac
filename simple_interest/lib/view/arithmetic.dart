@@ -91,6 +91,14 @@ class _ArithmeticViewState extends State<ArithmeticView> {
                 ),
               ),
               const SizedBox(height: 8),
+              Text(
+                'Simple Interest of given input is :$result',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontStyle: FontStyle.italic,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ],
           ),
         ),

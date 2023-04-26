@@ -59,6 +59,16 @@ class _DashboardState extends State<Dashboard> {
                 ),
               ),
               const SizedBox(height: 8),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/nameRoute');
+                  },
+                  child: const Text('Name'),
+                ),
+              ),
+              const SizedBox(height: 8),
             ],
           ),
         ),
