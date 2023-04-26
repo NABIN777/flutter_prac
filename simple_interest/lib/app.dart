@@ -22,7 +22,7 @@ class APP extends StatelessWidget {
         '/circleRoute': (context) => const Circle(),
         '/nameRoute': (context) => const Name(),
         '/richRoute': (context) => const RichTextView(),
-        'colRoute': (context) => const ColumnView(),
+        '/colRoute': (context) => const ColumnView(),
       },
     );
   }
