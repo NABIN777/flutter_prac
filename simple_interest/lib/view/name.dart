@@ -34,18 +34,17 @@ class _NameState extends State<Name> {
           child: Column(
             children: [
               const SizedBox(height: 8),
-              SizedBox(
-                width: double.infinity,
-                child: ElevatedButton(
-                  onPressed: () {
-                    setState(() {
-                      // names.add("Nirajan");
-                      saveName("Nirajan");
-
-                      // change the name to be displayed on click
-                    });
-                  },
-                  child: const Text('Display Name'),
+              Center(
+                child: SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      setState(() {
+                        saveName("Nirajan");
+                      });
+                    },
+                    child: const Text('Display Name'),
+                  ),
                 ),
               ),
               Text(
